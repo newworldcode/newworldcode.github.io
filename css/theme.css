@@ -4,21 +4,13 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.navigation {
-  height: 20vh;
-  width: 100vw; }
-  .navigation__logo {
-    border: 0; }
-    .navigation__logo:hover {
-      text-decoration: none;
-      border: 0; }
-    .navigation__logo--image {
-      display: block;
-      margin: 2vh auto;
-      height: 100%; }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica', sans-serif; }
+* + * {
+  margin-top: 2vh; }
 
 * + * {
   margin-top: 2vh; }
@@ -46,13 +38,77 @@ a {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.content-column, .colour--purple-green, .colour {
-  padding: 2vh;
-  text-align: center; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica', sans-serif; }
 
-.colour--purple-green {
-  height: 100vh;
-  margin-top: -20vh;
-  padding-top: 20vh; }
+.navigation {
+  height: 11vh;
+  width: 100vw;
+  position: fixed;
+  background: #444;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .navigation__logo {
+    display: inline-block;
+    border: 0;
+    width: 3vw;
+    margin-left: .5vw;
+    margin-top: 5vh; }
+    .navigation__logo:hover {
+      text-decoration: none;
+      border: 0; }
+    .navigation__logo--image {
+      display: block;
+      width: 100%;
+      -webkit-transform-origin: 50%;
+      -moz-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+      -o-transform-origin: 50%;
+      transform-origin: 50%;
+      -webkit-transform: rotate(40deg);
+      -moz-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      -o-transform: rotate(40deg);
+      transform: rotate(40deg); }
+
+.index {
+  position: relative; }
+  .index, .index__snow, .index__wildlife {
+    height: 100%;
+    margin: 0; }
+  .index__snow, .index__wildlife {
+    display: inline-block;
+    width: 50%;
+    background-size: cover;
+    background-position: bottom; }
+  .index__snow {
+    background-image: url(/images/index/snow.jpg); }
+  .index__wildlife {
+    background-image: url(/images/index/wildlife.jpg);
+    background-position: 0 70%; }
+  .index__header_one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=theme.css.map */
