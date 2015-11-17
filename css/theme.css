@@ -47,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', 'Helvetica', sans-serif; }
 
 .lobster {
-  font-family: "Lobster Two", Arial, sans-serif; }
+  font-family: "Lobster Two", Arial, sans-serif;
+  font-size: 1.2em; }
 
 .navigation {
   height: 11vh;
@@ -98,9 +99,12 @@ h1, h2, h3, h4, h5, h6 {
 .index {
   position: relative;
   margin: 0; }
-  .index, .index__snow, .index__wildlife {
-    height: 100%;
-    margin: 0; }
+  .index, .index__snow, .index__wildlife, .index__about, .index__clients {
+    height: 100vh;
+    margin: 0;
+    text-align: center; }
+  .index__about, .index__clients {
+    padding: 6vh 20%; }
   .index__snow, .index__wildlife {
     display: inline-block;
     width: 50%;
@@ -115,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: 80%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -123,8 +128,26 @@ h1, h2, h3, h4, h5, h6 {
   .index--gradient {
     background: linear-gradient(135deg, #0160b6, #478385);
     color: #FFF; }
-  .index--about {
-    text-align: center;
-    padding: 4vh 20%; }
+  .index__clients {
+    background-size: cover;
+    background-position: top;
+    background-image: url(/images/index/space.jpg);
+    color: #FFF;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .index__clients::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .index__clients .client {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .index__clients .client:last-child {
+        margin-right: 0; }
+      .index__clients .client:nth-child(3) {
+        margin-right: 0; }
 
 /*# sourceMappingURL=theme.css.map */
