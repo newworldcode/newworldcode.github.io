@@ -1,0 +1,71 @@
+body {
+  background: #374149;
+  text-align: center;
+  color: #FFF;
+  font-family: Georgia, Times, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.8em;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h1, p {
+  padding: 1em;
+}
+
+form {
+  margin-top: 2em;
+}
+
+.logo {
+  display: inline-block;
+  margin: 2em auto;
+  margin-bottom: 0;
+}
+
+#thanks {
+  display: none;
+}
+
+#thanks:target {
+  display: inline-block;
+}
+
+input, textarea {
+  display: block;
+  margin: 1.3em auto;
+  font-size: inherit;
+  width: 80%;
+  padding: 1em;
+  line-height: inherit;
+}
+
+fieldset {
+  background: #333;
+  border: 1px solid #e45c4c;
+  outline: 0;
+  padding: 1em;
+  width: 60%;
+  margin: 1.3em auto;
+}
+
+button {
+  padding: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border: none;
+  background: #e45c4c;
+  color: #FFF;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+  background:
+}
